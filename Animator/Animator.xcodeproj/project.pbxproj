@@ -38,30 +38,6 @@
 		F58D7FCC038192B3014B2308 /* T2.gif in CopyFiles */ = {isa = PBXBuildFile; fileRef = F57F97AA03818E3F0193DE26 /* T2.gif */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXBuildStyle section */
-		130F8B80001BD9A911CA292A /* Development */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				ZERO_LINK = YES;
-			};
-			name = Development;
-		};
-		130F8B81001BD9A911CA292A /* Deployment */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = YES;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				ZERO_LINK = NO;
-			};
-			name = Deployment;
-		};
-/* End PBXBuildStyle section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		130F8B89001BDB6411CA292A /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -274,16 +250,12 @@
 		00E6828EFEC88D1A11DB9C8B /* Project object */ = {
 			isa = PBXProject;
 			buildConfigurationList = 4C23422E08DF2E8D008B0BD4 /* Build configuration list for PBXProject "Animator" */;
-			buildSettings = {
-			};
-			buildStyles = (
-				130F8B80001BD9A911CA292A /* Development */,
-				130F8B81001BD9A911CA292A /* Deployment */,
-			);
+			compatibilityVersion = "Xcode 2.4";
 			hasScannedForEncodings = 1;
 			mainGroup = 00E6828FFEC88D1A11DB9C8B;
 			productRefGroup = 0120612AFEC8923411DB9C8B /* Products */;
 			projectDirPath = "";
+			projectRoot = "";
 			targets = (
 				130F8B84001BDB6411CA292A /* Animator */,
 			);
@@ -315,18 +287,6 @@
 				F58D7FBF0381926F014B2308 /* CopyFiles */,
 				F58D7FCA03819298014B2308 /* CopyFiles */,
 			);
-			buildSettings = {
-				DISABLE_PARALLEL_BUILDING = YES;
-				INSTALL_PATH = /Developer/Examples/Java/Applets;
-				JAVA_ARCHIVE_CLASSES = NO;
-				JAVA_ARCHIVE_COMPRESSION = NO;
-				JAVA_ARCHIVE_TYPE = JAR;
-				JAVA_COMPILER = /usr/bin/javac;
-				JAVA_SOURCE_SUBDIR = .;
-				PRODUCT_NAME = Animator;
-				PURE_JAVA = YES;
-				REZ_EXECUTABLE = YES;
-			};
 			dependencies = (
 			);
 			name = Animator;
@@ -389,7 +349,6 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
 			};
 			name = Debug;
 		};
@@ -399,7 +358,6 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
 			};
 			name = Release;
 		};

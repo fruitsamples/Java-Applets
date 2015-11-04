@@ -20,30 +20,6 @@
 		F5CA71580381E38401D9C453 /* water.xyz in CopyFiles */ = {isa = PBXBuildFile; fileRef = F5CA71470381E30501D9C453 /* water.xyz */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXBuildStyle section */
-		130F8B80001BD9A911CA292A /* Development */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				ZERO_LINK = YES;
-			};
-			name = Development;
-		};
-		130F8B81001BD9A911CA292A /* Deployment */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = YES;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				ZERO_LINK = NO;
-			};
-			name = Deployment;
-		};
-/* End PBXBuildStyle section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		130F8B89001BDB6411CA292A /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -150,16 +126,12 @@
 		00E6828EFEC88D1A11DB9C8B /* Project object */ = {
 			isa = PBXProject;
 			buildConfigurationList = 4C2342E408DF2E93008B0BD4 /* Build configuration list for PBXProject "MoleculeViewer" */;
-			buildSettings = {
-			};
-			buildStyles = (
-				130F8B80001BD9A911CA292A /* Development */,
-				130F8B81001BD9A911CA292A /* Deployment */,
-			);
+			compatibilityVersion = "Xcode 2.4";
 			hasScannedForEncodings = 1;
 			mainGroup = 00E6828FFEC88D1A11DB9C8B;
 			productRefGroup = 0120612AFEC8923411DB9C8B /* Products */;
 			projectDirPath = "";
+			projectRoot = "";
 			targets = (
 				130F8B84001BDB6411CA292A /* MoleculeViewer */,
 			);
@@ -189,18 +161,6 @@
 				130F8B89001BDB6411CA292A /* CopyFiles */,
 				F5CA71520381E37001D9C453 /* CopyFiles */,
 			);
-			buildSettings = {
-				DISABLE_PARALLEL_BUILDING = YES;
-				INSTALL_PATH = /Developer/Examples/Java/Applets;
-				JAVA_ARCHIVE_CLASSES = NO;
-				JAVA_ARCHIVE_COMPRESSION = NO;
-				JAVA_ARCHIVE_TYPE = JAR;
-				JAVA_COMPILER = /usr/bin/javac;
-				JAVA_SOURCE_SUBDIR = .;
-				PRODUCT_NAME = MoleculeViewer;
-				PURE_JAVA = YES;
-				REZ_EXECUTABLE = YES;
-			};
 			dependencies = (
 			);
 			name = MoleculeViewer;
@@ -263,7 +223,6 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
 			};
 			name = Debug;
 		};
@@ -273,7 +232,6 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
 			};
 			name = Release;
 		};
