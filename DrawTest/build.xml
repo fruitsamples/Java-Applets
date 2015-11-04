@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Applet demos" default="compile" basedir=".">
+	
+	<!-- Global Properties -->
+
+	 <property name="src" value="."/>
+	 <property name="dst" value="."/>
+	 <property name="obj" value="."/>
+	
+	<!-- Targets -->
+	
+	<target name="init" description="Create build directories">
+        <mkdir dir="${obj}"/>
+		<mkdir dir="${dst}"/>
+	</target>
+	
+	<target name="compile" depends="init" description="Compile">
+		<javac deprecation="on" destdir="${obj}" source="1.4" target="1.4" debug="true" fork="true" debuglevel="lines,source">
+			<src path="."/>
+		</javac>
+	</target>
+	
+	<target name="run" depends="compile" description="Run">
+		<exec executable="/usr/bin/open">
+			<arg value="${obj}/example1.html"/>
+		</exec>
+	</target>
+	
+	<target name="clean" description="Removes built products">
+	<delete>
+    		<fileset dir="${obj}" includes="**/*.class"/>
+  	</delete>
+	</target>
+</project>
